@@ -6,7 +6,9 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final Color customColor = const Color(0xFF7C7DED); // defining the color
+  final Color customColor = const Color(0xFF7C7DED);
+
+  const MyApp({super.key}); // defining the color
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(30),
                     margin: const EdgeInsets.only(
-                        top: 200, bottom: 10, left: 200, right: 200),
+                        top: 100, bottom: 10, left: 100, right: 100),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(color: customColor, width: 3),
@@ -95,7 +97,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     margin:
-                        const EdgeInsets.only(top: 150, left: 300, right: 300),
+                        const EdgeInsets.only(top: 100, left: 100, right: 100),
                     decoration: BoxDecoration(
                       color: customColor,
                       borderRadius: BorderRadius.circular(30),
